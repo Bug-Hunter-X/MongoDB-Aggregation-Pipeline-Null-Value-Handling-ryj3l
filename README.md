@@ -1,0 +1,2 @@
+# MongoDB Aggregation Pipeline Null Value Handling
+This repository contains a bug report and solution for handling null values in MongoDB aggregation pipelines. The bug involves the `$group` operator, which does not include null values in the result set when aggregating data. This can lead to unexpected results. The solution demonstrates how to use the `$cond` operator to check for null values and replace them with an appropriate value before grouping.
